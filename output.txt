@@ -1,0 +1,202 @@
+C:\Users\Farrokhi\Desktop\NC>project1.exe
+N = 32
+
+Float:
+CPU: Total: 0.080 ms
+GPU Simple: H2D: 0.245 ms | Kernel: 0.132 ms | D2H: 0.200 ms | Total: 0.576 ms
+GPU Tiled : H2D: 0.245 ms | Kernel: 0.174 ms | D2H: 0.294 ms | Total: 0.713 ms
+cuBLAS    : H2D: 0.245 ms | Kernel: 0.302 ms | D2H: 0.264 ms | Total: 0.811 ms
+
+Double:
+CPU: Total: 0.106 ms
+GPU Simple: H2D: 0.250 ms | Kernel: 0.012 ms | D2H: 0.224 ms | Total: 0.486 ms
+GPU Tiled : H2D: 0.250 ms | Kernel: 0.070 ms | D2H: 0.102 ms | Total: 0.422 ms
+cuBLAS    : H2D: 0.250 ms | Kernel: 0.093 ms | D2H: 0.058 ms | Total: 0.400 ms
+
+Int:
+CPU: Total: 0.076 ms
+GPU Simple: H2D: 0.068 ms | Kernel: 0.012 ms | D2H: 0.060 ms | Total: 0.140 ms
+GPU Tiled : H2D: 0.068 ms | Kernel: 0.043 ms | D2H: 0.055 ms | Total: 0.165 ms
+cuBLAS    : H2D: 0.050 ms | Kernel: 0.073 ms | D2H: 0.061 ms | Total: 0.184 ms
+
+C:\Users\Farrokhi\Desktop\NC>project2.exe
+N = 32
+
+cuSPARSE (A: 90% Zeros, NNZ = 113):
+Float     : H2D: 0.258 ms | Kernel: 3.977 ms | D2H: 0.187 ms | Total: 4.422 ms
+Double    : H2D: 0.183 ms | Kernel: 0.036 ms | D2H: 0.129 ms | Total: 0.348 ms
+Int8      : H2D: 0.097 ms | Kernel: 0.037 ms | D2H: 0.056 ms | Total: 0.190 ms
+
+C:\Users\Farrokhi\Desktop\NC>project1.exe
+N = 64
+
+Float:
+CPU: Total: 0.610 ms
+GPU Simple: H2D: 0.073 ms | Kernel: 0.101 ms | D2H: 0.082 ms | Total: 0.256 ms
+GPU Tiled : H2D: 0.073 ms | Kernel: 0.058 ms | D2H: 0.078 ms | Total: 0.209 ms
+cuBLAS    : H2D: 0.073 ms | Kernel: 0.243 ms | D2H: 0.203 ms | Total: 0.519 ms
+
+Double:
+CPU: Total: 0.743 ms
+GPU Simple: H2D: 0.176 ms | Kernel: 0.028 ms | D2H: 0.178 ms | Total: 0.382 ms
+GPU Tiled : H2D: 0.176 ms | Kernel: 0.180 ms | D2H: 0.196 ms | Total: 0.552 ms
+cuBLAS    : H2D: 0.176 ms | Kernel: 0.367 ms | D2H: 0.252 ms | Total: 0.796 ms
+
+Int:
+CPU: Total: 0.633 ms
+GPU Simple: H2D: 0.083 ms | Kernel: 0.018 ms | D2H: 0.109 ms | Total: 0.210 ms
+GPU Tiled : H2D: 0.083 ms | Kernel: 0.051 ms | D2H: 0.136 ms | Total: 0.270 ms
+cuBLAS    : H2D: 0.061 ms | Kernel: 0.086 ms | D2H: 0.110 ms | Total: 0.257 ms
+
+C:\Users\Farrokhi\Desktop\NC>project2.exe
+N = 64
+
+cuSPARSE (A: 90% Zeros, NNZ = 399):
+Float     : H2D: 0.527 ms | Kernel: 3.747 ms | D2H: 0.168 ms | Total: 4.442 ms
+Double    : H2D: 0.317 ms | Kernel: 0.038 ms | D2H: 0.074 ms | Total: 0.429 ms
+Int8      : H2D: 0.238 ms | Kernel: 0.037 ms | D2H: 0.114 ms | Total: 0.389 ms
+
+C:\Users\Farrokhi\Desktop\NC>project1.exe
+N = 128
+
+Float:
+CPU: Total: 5.014 ms
+GPU Simple: H2D: 0.283 ms | Kernel: 0.237 ms | D2H: 0.393 ms | Total: 0.912 ms
+GPU Tiled : H2D: 0.283 ms | Kernel: 0.197 ms | D2H: 0.300 ms | Total: 0.780 ms
+cuBLAS    : H2D: 0.283 ms | Kernel: 0.306 ms | D2H: 0.306 ms | Total: 0.894 ms
+
+Double:
+CPU: Total: 4.604 ms
+GPU Simple: H2D: 0.310 ms | Kernel: 0.275 ms | D2H: 0.315 ms | Total: 0.899 ms
+GPU Tiled : H2D: 0.310 ms | Kernel: 0.242 ms | D2H: 0.178 ms | Total: 0.730 ms
+cuBLAS    : H2D: 0.310 ms | Kernel: 0.309 ms | D2H: 0.207 ms | Total: 0.826 ms
+
+Int:
+CPU: Total: 4.828 ms
+GPU Simple: H2D: 0.176 ms | Kernel: 0.074 ms | D2H: 0.229 ms | Total: 0.479 ms
+GPU Tiled : H2D: 0.176 ms | Kernel: 0.097 ms | D2H: 0.232 ms | Total: 0.505 ms
+cuBLAS    : H2D: 0.146 ms | Kernel: 0.181 ms | D2H: 0.237 ms | Total: 0.564 ms
+
+C:\Users\Farrokhi\Desktop\NC>project2.exe
+N = 128
+
+cuSPARSE (A: 90% Zeros, NNZ = 1627):
+Float     : H2D: 0.297 ms | Kernel: 3.715 ms | D2H: 0.350 ms | Total: 4.362 ms
+Double    : H2D: 0.352 ms | Kernel: 0.225 ms | D2H: 0.290 ms | Total: 0.867 ms
+Int8      : H2D: 0.314 ms | Kernel: 0.048 ms | D2H: 0.265 ms | Total: 0.627 ms
+
+C:\Users\Farrokhi\Desktop\NC>project1.exe
+N = 256
+
+Float:
+CPU: Total: 51.683 ms
+GPU Simple: H2D: 0.520 ms | Kernel: 0.729 ms | D2H: 0.491 ms | Total: 1.740 ms
+GPU Tiled : H2D: 0.520 ms | Kernel: 0.312 ms | D2H: 0.379 ms | Total: 1.211 ms
+cuBLAS    : H2D: 0.520 ms | Kernel: 0.648 ms | D2H: 0.295 ms | Total: 1.463 ms
+
+Double:
+CPU: Total: 56.097 ms
+GPU Simple: H2D: 0.877 ms | Kernel: 1.072 ms | D2H: 0.656 ms | Total: 2.606 ms
+GPU Tiled : H2D: 0.877 ms | Kernel: 1.665 ms | D2H: 0.533 ms | Total: 3.075 ms
+cuBLAS    : H2D: 0.877 ms | Kernel: 1.600 ms | D2H: 0.541 ms | Total: 3.019 ms
+
+Int:
+CPU: Total: 52.934 ms
+GPU Simple: H2D: 0.558 ms | Kernel: 0.685 ms | D2H: 0.500 ms | Total: 1.743 ms
+GPU Tiled : H2D: 0.558 ms | Kernel: 0.495 ms | D2H: 0.446 ms | Total: 1.499 ms
+cuBLAS    : H2D: 0.416 ms | Kernel: 0.157 ms | D2H: 0.403 ms | Total: 0.977 ms
+
+C:\Users\Farrokhi\Desktop\NC>project2.exe
+N = 256
+
+cuSPARSE (A: 90% Zeros, NNZ = 6453):
+Float     : H2D: 0.350 ms | Kernel: 3.864 ms | D2H: 0.356 ms | Total: 4.570 ms
+Double    : H2D: 0.583 ms | Kernel: 0.378 ms | D2H: 0.489 ms | Total: 1.450 ms
+Int8      : H2D: 0.339 ms | Kernel: 0.084 ms | D2H: 0.377 ms | Total: 0.800 ms
+
+C:\Users\Farrokhi\Desktop\NC>project1.exe
+N = 512
+
+Float:
+CPU: Total: 434.616 ms
+GPU Simple: H2D: 1.250 ms | Kernel: 5.151 ms | D2H: 0.935 ms | Total: 7.336 ms
+GPU Tiled : H2D: 1.250 ms | Kernel: 2.196 ms | D2H: 0.785 ms | Total: 4.231 ms
+cuBLAS    : H2D: 1.250 ms | Kernel: 0.667 ms | D2H: 0.780 ms | Total: 2.697 ms
+
+Double:
+CPU: Total: 450.440 ms
+GPU Simple: H2D: 2.430 ms | Kernel: 7.993 ms | D2H: 1.276 ms | Total: 11.699 ms
+GPU Tiled : H2D: 2.430 ms | Kernel: 11.772 ms | D2H: 1.083 ms | Total: 15.285 ms
+cuBLAS    : H2D: 2.430 ms | Kernel: 9.929 ms | D2H: 1.110 ms | Total: 13.469 ms
+
+Int:
+CPU: Total: 431.958 ms
+GPU Simple: H2D: 1.599 ms | Kernel: 5.016 ms | D2H: 1.026 ms | Total: 7.641 ms
+GPU Tiled : H2D: 1.599 ms | Kernel: 2.021 ms | D2H: 0.825 ms | Total: 4.446 ms
+cuBLAS    : H2D: 0.449 ms | Kernel: 0.460 ms | D2H: 0.915 ms | Total: 1.824 ms
+
+C:\Users\Farrokhi\Desktop\NC>project2.exe
+N = 512
+
+cuSPARSE (A: 90% Zeros, NNZ = 26443):
+Float     : H2D: 0.813 ms | Kernel: 4.339 ms | D2H: 0.606 ms | Total: 5.759 ms
+Double    : H2D: 1.306 ms | Kernel: 1.454 ms | D2H: 1.030 ms | Total: 3.790 ms
+Int8      : H2D: 0.412 ms | Kernel: 0.567 ms | D2H: 0.586 ms | Total: 1.565 ms
+
+C:\Users\Farrokhi\Desktop\NC>project1.exe
+N = 1024
+
+Float:
+CPU: Total: 3559.496 ms
+GPU Simple: H2D: 4.351 ms | Kernel: 38.488 ms | D2H: 2.205 ms | Total: 45.043 ms
+GPU Tiled : H2D: 4.351 ms | Kernel: 16.867 ms | D2H: 2.063 ms | Total: 23.281 ms
+cuBLAS    : H2D: 4.351 ms | Kernel: 2.819 ms | D2H: 1.924 ms | Total: 9.094 ms
+
+Double:
+CPU: Total: 17792.324 ms
+GPU Simple: H2D: 8.241 ms | Kernel: 102.139 ms | D2H: 4.064 ms | Total: 114.443 ms
+GPU Tiled : H2D: 8.241 ms | Kernel: 131.471 ms | D2H: 3.758 ms | Total: 143.469 ms
+cuBLAS    : H2D: 8.241 ms | Kernel: 65.685 ms | D2H: 3.600 ms | Total: 77.526 ms
+
+Int:
+CPU: Total: 3691.754 ms
+GPU Simple: H2D: 12.195 ms | Kernel: 189.268 ms | D2H: 2.063 ms | Total: 203.526 ms
+GPU Tiled : H2D: 12.195 ms | Kernel: 15.774 ms | D2H: 1.731 ms | Total: 29.700 ms
+cuBLAS    : H2D: 1.093 ms | Kernel: 0.767 ms | D2H: 1.846 ms | Total: 3.706 ms
+
+C:\Users\Farrokhi\Desktop\NC>project2.exe
+N = 1024
+
+cuSPARSE (A: 90% Zeros, NNZ = 105295):
+Float     : H2D: 2.136 ms | Kernel: 6.661 ms | D2H: 1.635 ms | Total: 10.431 ms
+Double    : H2D: 4.134 ms | Kernel: 9.564 ms | D2H: 3.441 ms | Total: 17.138 ms
+Int8      : H2D: 1.141 ms | Kernel: 3.308 ms | D2H: 1.806 ms | Total: 6.254 ms
+
+C:\Users\Farrokhi\Desktop\NC>project1.exe
+N = 2048
+
+Float:
+CPU: Total: 152420.719 ms
+GPU Simple: H2D: 13.813 ms | Kernel: 380.215 ms | D2H: 7.502 ms | Total: 401.529 ms
+GPU Tiled : H2D: 13.813 ms | Kernel: 118.651 ms | D2H: 7.265 ms | Total: 139.728 ms
+cuBLAS    : H2D: 13.813 ms | Kernel: 16.265 ms | D2H: 6.645 ms | Total: 36.722 ms
+
+Double:
+CPU: Total: 176564.938 ms
+GPU Simple: H2D: 27.723 ms | Kernel: 540.686 ms | D2H: 16.212 ms | Total: 584.621 ms
+GPU Tiled : H2D: 27.723 ms | Kernel: 612.020 ms | D2H: 13.653 ms | Total: 653.396 ms
+cuBLAS    : H2D: 27.723 ms | Kernel: 427.774 ms | D2H: 13.679 ms | Total: 469.176 ms
+
+Int:
+CPU: Total: 148948.203 ms
+GPU Simple: H2D: 13.558 ms | Kernel: 384.153 ms | D2H: 7.824 ms | Total: 405.535 ms
+GPU Tiled : H2D: 13.558 ms | Kernel: 115.885 ms | D2H: 7.161 ms | Total: 136.604 ms
+cuBLAS    : H2D: 3.532 ms | Kernel: 4.240 ms | D2H: 7.487 ms | Total: 15.259 ms
+
+C:\Users\Farrokhi\Desktop\NC>project2.exe
+N = 2048
+
+cuSPARSE (A: 90% Zeros, NNZ = 419603):
+Float     : H2D: 9.258 ms | Kernel: 50.737 ms | D2H: 6.973 ms | Total: 66.968 ms
+Double    : H2D: 15.577 ms | Kernel: 98.423 ms | D2H: 13.893 ms | Total: 127.893 ms
+Int8      : H2D: 2.879 ms | Kernel: 22.283 ms | D2H: 6.875 ms | Total: 32.037 ms
